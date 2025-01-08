@@ -64,7 +64,7 @@ function TabContent({ item }) {
   const [likes, setLikes] = useState(0);
  
   function handleInc() {
-    setLikes(likes => likes +1);
+    setLikes(likes => likes +1);//using callback func instead of just simple like+1 is better option when it is about being async . things wont work as expected if done in the simple way
   }
   function handleTrippleInc() {
     handleInc()
